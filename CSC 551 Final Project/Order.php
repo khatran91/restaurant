@@ -30,6 +30,32 @@ Email: <?php print($_POST['email']); ?> </br>
 <?php print("Zip code: " . $_POST['zip']); ?>
 </p>
 
+<?php
+
+function insertToDB() {
+    $database=connectDB();
+
+    $st1 = "INSERT INTO customer(fullname, email, phone, orderId, address, city, state, zip)";
+    $st2 = "VALUES('";
+	$st3 = mysqli_real_escape_string($dataBase, $_POST['fullname'])."','";
+	$st4 = mysqli_real_escape_string($dataBase, $_POST['email'])."','";
+	$st5 = mysqli_real_escape_string($dataBase, $_POST['phone'])."','";
+	$st6 = mysqli_real_escape_string($dataBase, $_POST['address'])."','";
+	$st7 = mysqli_real_escape_string($dataBase, $_POST['city'])."','";
+	$st8 = mysqli_real_escape_string($dataBase, $_POST['state'])."','";
+	$st9 = mysqli_real_escape_string($dataBase, $_POST['zip']);
+	$st10 = "');";
+
+    $query1 = $st1.$st2.$st3.$st4.$st5.$st6.$st7.$st8.$st9.$st10;
+
+    $result1 = mysqli_query($dataBase, $query1) or die('Query failed: ' . mysqli_error($dataBase));
+
+    mysql_close($dataBase);
+}
+
+insertToDB();
+
+?>
 </body>    
     
 </html>
