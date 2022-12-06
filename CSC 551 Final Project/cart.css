@@ -1,0 +1,214 @@
+/*<--------------- Cart Page ------------->*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.overlay {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+h2 {
+    color: antiquewhite;
+}
+nav {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 50px 60px 0 60px;
+}
+nav li {
+        list-style: none;
+        display: inline-block;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+nav li span {
+        padding-left: 5px;
+    }
+li a {
+        padding: 5px;
+        background-color: white;
+        text-decoration: none;
+    }
+.cart ion-icon {
+        vertical-align: bottom;
+        font-size: 20px;
+        padding-right: 5px;
+    }
+.cart a {
+        background-color: royalblue;
+        color: white;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    /*<-------------- Cart Items --------------->*/
+.products-container {
+    max-width: 650px;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    padding-bottom: 100px;
+    flex-wrap: wrap;
+}
+.products-container ion-icon {
+    font-size: 25px;
+    color: blue;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.product-header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 4px solid lightgray;
+    margin: 0 auto;
+}
+.product-title {
+    width: 45%;
+}
+.product-price {
+    width: 15%;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+}
+.product-quantity {
+    width: 30%;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+}
+.total {
+    width: 10%;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+}
+.product {
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid lightgray;
+}
+.product ion-icon {
+    cursor: pointer;
+}
+.products {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    vertical-align: middle;
+}
+.products img {
+    width: 75px;
+}
+.basketTotalContainer {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 10px 0;
+}
+.basketTitle {
+    width: 30%;
+}
+.basketTotal {
+    width: 10%;
+}
+
+
+/*<----------------Checkout Form----------------->*/
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    min-height: 100vh;
+    padding-bottom: 70px;
+    
+}
+.container form {
+    width: 800px;
+    padding-left: 100px;
+}
+.container form .row {
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 15px;
+}
+.container form .row .col {
+    flex: 1 1 250px;
+}
+.container form .row .col .checkout-title{
+    font-size: 20px;
+    color: #333;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+.container form .row .col .inputBox{
+    margin: 15px 0;
+}
+.container form .row .col .inputBox span {
+    margin-bottom: 10px;
+    display: block;
+}
+.container form .row .col .inputBox input {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    font-size: 15px;
+    text-transform: none;
+}
+.container form .row .col .inputBox input[type=number]::-webkit-inner-spin-button,
+.container form .row .col .inputBox input[type=number]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+.container form .row .col .inputBox input:focus {
+    border: 1px solid black;
+}
+.container form .row .col .flex {
+    display: flex;
+    grid-gap: 15px;
+}
+.container form .row .col .flex inputBox {
+    margin-top: 5px;
+}
+.container form .submit-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 17px;
+    background: #27ae60;
+    color: white;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.container form .submit-btn:hover {
+    background: gray;
+}

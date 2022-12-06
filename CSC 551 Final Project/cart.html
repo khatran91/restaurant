@@ -1,0 +1,133 @@
+<DOCTYPE! html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <link href="cart.css" rel="stylesheet">
+    <script type="text/javascript" src="jquery.js"></script>
+    <title>Shopping Cart</title>
+</head>
+<body>
+    <header>
+        <img src="images/cart.jpeg" height="150px" width="100%">
+        <div class="overlay"></div>
+        <nav>
+            <h2>Creighton's Restaurant</h2>
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="#">Order Now</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+                <li class="cart">
+                    <a href="cart.html">
+                        <ion-icon name="cart-outline"></ion-icon>Cart<span>0</span>
+                    </a>    
+                </li>
+            </ul>
+        </nav>
+    </header>
+            
+    <div class="products-container">
+        <div class="product-header">
+            <h5 class="product-title">PRODUCT</h5>
+            <h5 class="product-price">PRICE</h5>
+            <h5 class="product-quantity">QUANTITY</h5>
+            <h5 class="total">TOTAL</h5>
+
+        </div>
+        
+        <div class="products">
+        
+        </div>
+    
+    </div>
+
+    <div class="container">
+        <form method="post" action="Order.php">
+
+            <div class="row">
+                
+                <div class="col">
+                    <h3 class="checkout-title">Billing Address</h3>
+
+                    <div class="inputBox">
+                        <span>Full Name: </span>
+                        <input type="text" name="fullname" id="name" placeholder="Thomas Wilson" required>
+                    </div>
+                    <div class="inputBox">
+                        <span>Phone Number: </span>
+                        <input type="number" name="phone" id="phone" placeholder="(402) 123-1234" required>
+                    </div>
+                    <div class="inputBox">
+                        <span>Email: </span>
+                        <input type="email" name="email" id="email" placeholder="thomaswilson@gmail.com" required>
+                    </div>
+                    <div class="inputBox">
+                        <span>Address: </span>
+                        <input type="text" name="address" id="address" placeholder="2000 California St" required>
+                    </div>
+                    <div class="inputBox">
+                        <span>City: </span>
+                        <input type="text" name="city" id="city" placeholder="Omaha" required>
+                    </div>
+
+                    <div class="flex">
+                        <div class="inputBox">
+                            <span>State: </span>
+                            <input type="text" name="state" id="state" placeholder="Nebraska" required>
+                        </div>
+                        <div class="inputBox">
+                            <span>Zip Code: </span>
+                            <input type="number" name="zip"  placeholder="123456" required>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col">
+                    
+                    <h3 class="checkout-title">Payment</h3>
+
+                     <div class="inputBox">
+                        <span>Card Accepted: </span>
+                        <img src="images/card.jpeg" alt="" width="230px" height="39px">
+                    </div>
+                    <div class="inputBox">
+                        <span>Name on Card: </span>
+                        <input type="text" placeholder="Thomas Wilson" required>
+                    </div>
+                    <div class="inputBox">
+                        <span>Credit Card Number: </span>
+                        <input type="number" placeholder="1111-2222-3333-4444" required>
+                    </div>
+                    <div class="inputBox">
+                        <span>Expiration Month: </span>
+                        <input type="text" placeholder="January" required>
+                    </div>
+
+                    <div class="flex">
+                        <div class="inputBox">
+                            <span>Expiration Year: </span>
+                            <input type="number" placeholder="2022" required>
+                        </div>
+                        <div class="inputBox">
+                            <span>CVV: </span>
+                            <input type="number" placeholder="1234" required>
+                        </div>
+                    
+                    
+                    </div>
+                </div>
+            </div>
+            
+            <input type = "submit" value = "Checkout" class = "submit-btn">
+        </form>
+
+    </div>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="menu.js"></script>
+</body>
+</html>

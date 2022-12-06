@@ -1,0 +1,398 @@
+<style type="text.css">
+
+/* Home Page */
+*{
+        margin: 0;
+        padding: 0;
+    }
+.toptext { 
+        text-align:center;
+        color: black;
+        font-family: 'Shalimar', cursive;
+        font-size: 80px;
+        font-weight: bold;
+    }
+.background_image { 
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    /* Navigation Bar */
+nav{
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 2;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-left: 10px;
+        padding-top: 30px;
+    }
+nav li {
+        list-style: none;
+        display: inline-block;
+        padding-right: 3px;
+        padding-left: 3px;
+    }
+nav li span {
+        padding-left: 5px;
+    }
+li a {
+        padding: 5px;
+        background-color: white;
+        text-decoration: none;
+    }
+.cart ion-icon {
+        vertical-align: bottom;
+        font-size: 20px;
+        padding-right: 5px;
+    }
+.cart a {
+        background-color: royalblue;
+        color: white;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    /* Menu Page */
+    .menus {
+        width: 100%;
+        background-image: linear-gradient(to right bottom, rgb(105, 105,105), rgba(128, 0, 0, 0.5));  
+        height: 780px;
+            }
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    padding-bottom: 100px;
+}
+.menu-heading{font-size: 2.5rem;
+                            text-align: center;
+                            padding-top: 10px;
+                            padding-bottom: 10px;
+                            color: white;
+                            font-weight: 500;
+            }
+.menu-grid{display: grid;
+                        grid-template-rows:repeat(2, 1fr);
+                        grid-template-columns:repeat(4, 1fr);
+                        justify-self: center;
+                        grid-gap: 1rem;
+
+            }
+.menuImg1{
+                    background-size: cover;
+                    background-position: left;
+            }
+.menuImg2{
+                    background-size: cover;
+                    background-position: left;
+            }
+.menuImg3{
+                    background-size: cover;
+                    background-position: left;
+            }
+.menuImg4{
+                    background-size: cover;
+                    background-position: left;
+            }
+.menuImg5{
+                    background-size: cover;
+                    background-position: left;
+            }
+.menuImg6{
+                    background-size: cover;
+                    background-position: left;
+            }
+.menuImg7{
+                    background-size: cover;
+                    background-position: left;
+            }
+.menuImg8{
+                    background-size: cover;
+                    background-position: left;
+            }
+.menu-container{width: 100%;
+                            height: 20rem;
+                            background-color: white;
+                            border-radius: 5px;
+                            overflow: hidden;
+                            box-shadow: 0 0 2rem rgba(0,0,0,.2);
+                            transition: all .4 ease;
+            }
+.menu-container:hover{
+                box-shadow: 0 0 5rem rgba(0,0,0,.4);
+                transform: scale(1.05);
+            }
+.menu-p{
+                font-size: 15px;
+                text-align: center;
+            }
+.menu-title{
+                font-size: 25px;
+                text-align: center;
+
+            }
+.price{
+                flex-grow: 1;
+                font-size: 15px;
+                color:firebrick;
+                text-align: center;
+                padding-left: 100px;
+                text-shadow: 0 .4rem 2rem;
+            }
+.cartButton{
+                cursor: pointer;
+                color: white;
+                background-color: blue;
+                width: 100px;
+                height: 20px;
+                padding-right: 20px;
+                font-size: 10px;
+            }
+.cartButton:hover{
+                background-color:grey;
+
+            }
+.itemDetails{
+                display: flex;
+                align-items: center;
+                padding-right: 50px;
+            }
+
+    /* About Us Page */
+.aboutUS {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: 500;
+
+    }
+.map {
+        float: right;
+        padding-right: 120px;
+        padding-top: 70px;
+    }
+h2 {
+            font-size: 30px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            color: #8CC63F;
+            text-transform: uppercase;
+        }
+table {
+        border-collapse: collapse;
+    }
+.sunday {
+            border: 1px solid #8CC63F;
+        }
+#activerow > td {
+            font-weight: 600;
+        }
+
+        /* Design table */
+.hours {
+            overflow: hidden;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.10), 0 1px 2px rgba(0, 0, 0, 0.24);
+            background-color: white;
+            padding-left: 30px;
+            padding-top: 80px;
+            padding-bottom: 70px;
+            max-width: 45%;
+            height: 600px;
+        }
+.fvl-d > td {
+            font-size: 17px;
+            font-weight: 400;
+            letter-spacing: 1.2px;
+            color: #A299AC;
+            text-transform: uppercase;
+            padding: 1em;
+        }
+.fvl-d > td > span {
+            font-size: 18px;
+            font-weight: 600;
+            letter-spacing: 1.2px;
+            color: #A299AC;
+            text-transform: uppercase;
+        }
+@media screen and (max-width: 382px) {
+
+     .fvl-d > td {
+            font-size: 14px;
+            padding: 15px 5px;
+        }
+
+       #activerow {
+            border: none;
+            background-color: #8CC63F;
+        }
+
+        #activerow > td {
+            color: white;
+            font-weight: 600;
+        }
+
+        #activerow > td > span {
+            color: white;
+        }
+}
+
+/* Contact Us Page */
+
+.contact {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url("./images/dining.jpeg");
+    background-size: cover;
+}
+.contact .content {
+    max-width: 800px;
+    text-align: center;
+}
+.contact .content h1 {
+    font-size: 36px;
+    font-weight: 500;
+    color: white;
+}
+.contact .content p {
+    font-weight: 300;
+    color: white;
+}
+.area {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.area .contactInfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.area .contactInfo .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.area .contactInfo .box .icon {
+    min-width: 60px;
+    height: 60px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.area .contactInfo .box .text {
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.area .contactInfo .box .text h3 {
+    font-weight: 500;
+    color: darkturquoise;
+}
+.contactForm {
+    width: 40%;
+    padding: 40px;
+    background: #f5deb3;
+}
+.contactForm h3 {
+    font-size: 30px;
+    color: dimgray;
+    font-weight: 500;
+}
+.contactForm .inputBox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 15px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    resize: none;
+}
+.contactForm .inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 15px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: dimgray;
+    
+}
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span
+{
+    color: firebrick;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.contactForm .inputBox input[type="submit"]{
+    width: 100px;
+    background: aqua;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+.message{
+    width: 100%%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.message .success {
+    font-size: 20px;
+    color: green;
+    position: absolute;
+    animation: buttons .3s linear;
+    display: none;
+}
+.message .danger{
+    font-size: 20px;
+    color: red;
+    position: absolute;
+    transition: .3s;
+    animation: buttons .3s linear;
+    display: none;
+}
+@keyframes buttons{
+    0%{
+        transform: scale(0.1);
+    }
+    50%{
+        transform: scale(0.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
